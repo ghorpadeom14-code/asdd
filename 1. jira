@@ -1,0 +1,74 @@
+project name : Online shopping Application
+
+Task 1 — User Registration
+- Issue Type: Story
+- Summary: User Registration
+- Priority: High
+- Assignee: You
+- Labels: frontend
+- Start Date: 03 Nov 2026
+- Due Date: 04 Nov 2026
+User Story:
+As a new user, I want to register an account so that I can access the online shopping application.
+
+Description:
+- Create a registration form.
+- Accept name, email, and password.
+- Validate user input.
+- Display a successful registration message.
+Acceptance Criteria:
+- User can enter registration details.
+- Invalid details display an error.
+- Valid details create an account.
+
+Task 2 — Product Search
+- Issue Type: Story
+- Summary: Product Search
+- Priority: Medium
+- Assignee: You
+- Labels: backend
+- Start Date: 04 Nov 2026
+- Due Date: 05 Nov 2026
+User Story:
+As a customer, I want to search for products so that I can quickly find items I want to purchase.
+
+Description:
+- Add a search bar.
+- Allow users to search by product name.
+- Display matching products.
+- Display a message if no products are found.
+Acceptance Criteria:
+- User can enter a product name.
+- Matching products are displayed.
+- No-match searches display an appropriate message.
+
+Task 3 — Add to Cart
+- Issue Type: Story
+- Summary: Add Product to Cart
+- Priority: Highest
+- Assignee: You
+- Labels: cart
+- Start Date: 05 Nov 2026
+- Due Date: 06 Nov 2026
+User Story:
+As a customer, I want to add products to my cart so that I can purchase multiple items together.
+
+Description:
+- Add an Add to Cart button.
+- Display selected products in the cart.
+- Allow users to change product quantity.
+- Calculate the total price.
+Acceptance Criteria:
+- User can add a product to the cart.
+- Cart displays the selected product.
+- Total price updates when quantity changes.
+
+You can invite a professor or another student as a project collaborator/member without making them a Jira site administrator.
+1. Open your Jira project.
+2. Click Project settings in the left sidebar.
+3. Select People.
+4. Click Add people.
+5. Enter the collaborator's email address.
+6. Select a project role such as Member or Developer.
+7. Click Add.
+The collaborator may receive an invitation email. They need to accept it and sign in to Jira to access the project.
