@@ -1,0 +1,14 @@
+git --version
+git config -- global user.name ""
+git config --globl user.email ""
+git config --list
+mkdir 
+cd 
+git init 
+git status
+echo "#    "> README.md
+git add README.md
+git commit -m "Inital Commit"
+git branch -m main
+git remote add origin 
+git push -u origin main
