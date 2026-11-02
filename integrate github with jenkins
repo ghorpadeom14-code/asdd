@@ -1,0 +1,46 @@
+1. Create a GitHub repository
+1. Log in to GitHub.
+2. Click New repository.
+3. Enter repository name: Jenkins-Demo.
+4. Select Public.
+5. Click Create repository.
+6. Add a sample file, such as hello.txt, and commit it.
+2. Install the Git plugin in Jenkins
+1. Open Jenkins Dashboard.
+2. Go to Manage Jenkins → Plugins.
+3. Search for Git plugin.
+4. Install it if it is not already installed.
+5. Restart Jenkins if prompted.
+3. Create a Jenkins job
+1. Click New Item.
+2. Enter job name: GitHub-Public.
+3. Select Freestyle project.
+4. Click OK.
+4. Connect the public GitHub repository
+1. In the job configuration, go to Source Code Management.
+2. Select Git.
+3. Copy the HTTPS URL of your public GitHub repository.
+4. Paste it into Repository URL.
+Set Branch Specifier to: */main
+Configure the build step
+1. Scroll to Build Steps.
+2. Click Add build step.
+3. Select Execute Windows batch command.
+4. Enter: echo Repository cloned from GitHub
+          echo Hello World
+5. Click Save.
+Execute the job
+1. Open the GitHub-Public job.
+2. Click Build Now.
+3. Click the latest build number.
+4. Open Console Output.
+5. Check that Jenkins successfully clones the repository and displays:
+   Repository cloned from GitHub
+   Hello World
+   Finished: SUCCESS
+7. Verify the integration
+1. Make a change to hello.txt on GitHub.
+2. Commit the change.
+3. Return to Jenkins.
+4. Click Build Now again.
+5. Check the Console Output.
