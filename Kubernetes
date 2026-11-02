@@ -1,0 +1,36 @@
+1. before performing check in powershell administrator:
+minikube version
+kubectl version --client
+docker --version
+2. if minikube and kubectel is not there then paste this:
+winget install -e --id Kubernetes.kubectl
+kubectl version --client
+winget install Kubernetes.minikube
+minikube version
+
+then in seperate powershell run this:
+1. Start Minikube
+Command: minikube start
+Expected Output: Done! kubectl is now configured to use "minikube" cluster
+2. Verify Cluster
+Command: kubectl get nodes
+Expected Output: minikube Ready
+3. Create Deployment
+Command: kubectl create deployment nginx --image=nginx
+Expected Output: deployment.apps/nginx created
+4. Check Pods
+Command: kubectl get pods
+Expected Output: nginx-xxxxx Running
+5. Expose Service
+Command: kubectl expose deployment nginx --type=NodePort --port=80
+Expected Output: service/nginx exposed
+6. Check Service
+Command: kubectl get services
+Expected Output: nginx NodePort
+7. Open Application
+Command: minikube service nginx
+Expected Output: Browser opens NGINX page
+8. minikube dashboard
+This opens the Kubernetes Dashboard in your browser.
+Final Result: Browser displays "Welcome to nginx!"
+Viva Keywords: Pod, Deployment, Service, Node, Cluster, Minikub
