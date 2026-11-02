@@ -1,0 +1,20 @@
+Docker Containerization — Steps
+1. Open Docker Desktop and wait until it is running.
+2. Verify Docker: On cmd or powershell
+   docker --version
+   docker compose version
+3. Clone the project:
+   git clone https://github.com/docker/getting-started-todo-app
+4. Navigate to the project directory:
+   cd getting-started-todo-app
+5. Start the application:
+   docker compose watch
+6. Open a second terminal and check containers:
+   docker compose ps
+7. Build the Docker image:
+   docker build -t welcome .
+8. Verify the image:
+   docker images
+9. Open the application in the browser:
+   http://localhost:3000
+10. Verify the application is running in the browser.
