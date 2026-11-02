@@ -1,0 +1,26 @@
+Steps to open Grafana
+1. Press Windows + R.
+2. Type:
+   services.msc
+3. Press Enter.
+4. Find Grafana or Grafana Server in the list.
+5. Right-click it and select Start.
+6. Wait until its status shows Running.
+7. Open Chrome or any browser.
+8. Enter this address:
+   http://localhost:3000
+9. Log in using:
+   Username: admin
+   Password: admin
+10. If prompted, create a new password.
+
+If Grafana is already running
+You can skip the Services steps and directly open:
+http://localhost:3000
+If the page does not open
+Open PowerShell as Administrator and run:
+net start grafana
+Then refresh the browser.
+
+Visualizations to use:
+stat, timeseries, gauge, bar gauge, table, piechart
