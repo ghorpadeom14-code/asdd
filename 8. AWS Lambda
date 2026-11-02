@@ -1,0 +1,34 @@
+Implementation Steps
+Step 1: Sign in to AWS
+- Open the AWS Management Console and sign in.
+Step 2: Open AWS Lambda
+- Go to Services → Lambda.
+
+Step 3: Create Function
+- Click Create function.
+- Select Author from scratch.
+
+Step 4: Configure Function
+- Enter the function name.
+- Select the required runtime.
+- Select or create an IAM role with basic Lambda permissions.
+- Click Create function.
+
+Step 5: Add Code
+- In the Code section, enter the Lambda code.
+- Click Deploy.
+
+Step 6: Test Function
+- Click Test → Create new test event.
+- Enter an event name and click Create.
+- Click Test to run the function.
+
+Step 7: Check Result
+- View the execution result.
+- Verify that the output displays the expected message.
+
+Step 8: Deploy (Optional)
+- Integrate Lambda with services such as API Gateway, S3, or Step Functions.
+
+Step 9: Monitor
+- Use Amazon CloudWatch to view logs, metrics, and errors.
