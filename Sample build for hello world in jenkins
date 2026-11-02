@@ -1,0 +1,13 @@
+Install Java JDK and verify :- java -version
+Download and install Jenkins from https://www.jenkins.io/download/
+Open Jenkins:
+http://localhost:8080
+Unlock Jenkins using the initial administrator password.
+Install suggested plugins and create an admin account.
+Click New Item → enter Hello-World → select Pipeline → click OK.
+Scroll to the Pipeline section.
+In the Script area, select Hello World from the try sample Pipeline... dropdown.
+Click Save.
+Click Build Now.
+Open the build number → Console Output.
+Verify that Hello World and Finished: SUCCESS appear.
